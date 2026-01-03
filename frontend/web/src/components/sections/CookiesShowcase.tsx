@@ -78,7 +78,7 @@ export default function CookiesShowcase() {
                             <div className="relative z-10 text-center mt-auto">
                                 <h3 className="text-2xl font-display">{cookie.title}</h3>
                                 <p className="text-cocoa mt-2 text-sm">{cookie.description}</p>
-                                <p className="text-gold mt-4 font-medium tracking-widest">₹{cookie.price}</p>
+                                <p className="text-gold mt-4 font-medium tracking-widest">₹{cookie.price} / {cookie.priceUnit}</p>
                             </div>
                         </div>
                     ))}

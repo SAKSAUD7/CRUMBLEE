@@ -76,7 +76,7 @@ export default function BrowniesShowcase() {
                             <div className="relative z-20 text-center mt-auto pb-4">
                                 <h3 className="text-2xl font-display text-cream">{brownie.title}</h3>
                                 <p className="text-cream/80 mt-2 text-sm">{brownie.description}</p>
-                                <p className="text-gold mt-4 font-medium tracking-widest text-lg">₹{brownie.price}</p>
+                                <p className="text-gold mt-4 font-medium tracking-widest text-lg">₹{brownie.price} / {brownie.priceUnit}</p>
                             </div>
                         </div>
                     ))}

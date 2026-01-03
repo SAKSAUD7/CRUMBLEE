@@ -4,6 +4,7 @@ export interface Product {
     description: string;
     imagePath: string;
     price: number;
+    priceUnit: string;
     category: 'cookie' | 'brownie';
 }
 
@@ -13,7 +14,8 @@ export const cookies: Product[] = [
         title: "Classic Double Choco",
         description: "Rich dark chocolate dough with molten chocolate chips.",
         imagePath: "/images/products/cookie-double-choco.png",
-        price: 180,
+        price: 180 /* INR */,
+        priceUnit: 'per box',
         category: 'cookie'
     },
     {
@@ -21,7 +23,8 @@ export const cookies: Product[] = [
         title: "Red Velvet Bliss",
         description: "Vibrant red velvet with creamy white chocolate chips.",
         imagePath: "/images/products/cookie-red-velvet.png",
-        price: 200,
+        price: 200 /* INR */,
+        priceUnit: 'per box',
         category: 'cookie'
     },
     {
@@ -29,7 +32,8 @@ export const cookies: Product[] = [
         title: "White Choco Macadamia",
         description: "Golden baked with premium macadamia nuts.",
         imagePath: "/images/products/cookie-macadamia.png",
-        price: 220,
+        price: 220 /* INR */,
+        priceUnit: 'per box',
         category: 'cookie'
     }
 ];
@@ -41,6 +45,7 @@ export const brownies: Product[] = [
         description: "Intensely dark and fudgy, strictly for chocolate lovers.",
         imagePath: "/images/products/brownie-fudge.png",
         price: 250,
+        priceUnit: 'per box',
         category: 'brownie'
     },
     {
@@ -49,6 +54,7 @@ export const brownies: Product[] = [
         description: "Classic fudge base topped with roasted walnuts.",
         imagePath: "/images/products/brownie-walnut.png",
         price: 280,
+        priceUnit: 'per box',
         category: 'brownie'
     }
 ];
