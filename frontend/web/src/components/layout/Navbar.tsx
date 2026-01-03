@@ -33,12 +33,12 @@ export default function Navbar() {
     return (
         <nav
             className={clsx(
-                "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-12 py-6",
-                scrolled ? "bg-cream/80 backdrop-blur-md py-4 shadow-sm" : "bg-transparent"
+                "fixed top-0 left-0 w-full z-50 transition-all duration-300 px-4 sm:px-6 md:px-12 py-4 md:py-6",
+                scrolled ? "bg-cream/80 backdrop-blur-md py-3 md:py-4 shadow-sm" : "bg-transparent"
             )}
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <Link href="/" className="text-2xl font-display font-bold tracking-tighter text-espresso">
+                <Link href="/" className="text-xl sm:text-2xl font-display font-bold tracking-tighter text-espresso">
                     CRUMBELLE
                 </Link>
 

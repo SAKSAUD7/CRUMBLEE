@@ -42,16 +42,16 @@ export default function Gallery() {
     }, { scope: containerRef });
 
     return (
-        <section ref={containerRef} className="py-32 px-6 bg-white">
+        <section ref={containerRef} className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 bg-white">
             <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-16">
+                <div className="text-center mb-12 sm:mb-16">
                     <span className="text-gold uppercase tracking-widest text-sm font-medium">Lifestyle</span>
-                    <h2 className="text-4xl md:text-6xl font-display text-espresso mt-4">The Crumb Life</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-display text-espresso mt-4">The Crumb Life</h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 h-auto md:h-[800px]">
                     {images.map((img, i) => (
-                        <div key={i} className={`relative overflow-hidden rounded-2xl ${img.span} gallery-img group`}>
+                        <div key={i} className={`relative overflow-hidden rounded-2xl h-64 sm:h-auto ${img.span} gallery-img group`}>
                             <Image
                                 src={img.src}
                                 alt={img.alt}

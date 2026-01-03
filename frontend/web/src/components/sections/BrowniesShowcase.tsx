@@ -22,19 +22,19 @@ export default function BrowniesShowcase() {
         <section
             id="brownies"
             ref={containerRef}
-            className="relative w-full min-h-screen bg-chocolate text-cream py-32"
+            className="relative w-full min-h-screen bg-chocolate text-cream py-16 sm:py-24 md:py-32"
         >
-            <div className="max-w-7xl mx-auto px-6">
-                <h2 className="relative z-10 text-5xl md:text-7xl font-display mb-24 text-center text-cream drop-shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <h2 className="relative z-10 text-3xl sm:text-5xl md:text-7xl font-display mb-12 sm:mb-16 md:mb-24 text-center text-cream drop-shadow-sm">
                     Rich Brownies
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 max-w-4xl mx-auto">
                     {brownies.map((brownie, i) => (
                         <div
                             key={brownie.id}
                             ref={(el) => { cardsRef.current[i] = el; }}
-                            className="group aspect-[3/4] bg-[#4A2F20] rounded-2xl relative p-8 flex flex-col justify-between cursor-pointer border border-[#5C3A28] transition-transform duration-100 ease-linear transform-gpu overflow-hidden"
+                            className="group aspect-[3/4] bg-[#4A2F20] rounded-2xl relative p-6 sm:p-8 flex flex-col justify-between cursor-pointer border border-[#5C3A28] transition-transform duration-100 ease-linear transform-gpu overflow-hidden"
                             onMouseMove={(e) => {
                                 const rect = e.currentTarget.getBoundingClientRect();
                                 const x = (e.clientX - rect.left) / rect.width - 0.5;

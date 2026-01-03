@@ -49,28 +49,28 @@ export default function Hero() {
             {/* Content */}
             <div
                 ref={contentRef}
-                className="relative z-30 text-center flex flex-col items-center max-w-5xl px-4 pointer-events-none"
+                className="relative z-30 text-center flex flex-col items-center max-w-5xl px-4 sm:px-6 pointer-events-none"
             >
                 <div className="pointer-events-auto">
-                    <span className="block text-gold text-lg md:text-xl font-medium tracking-[0.2em] mb-4 uppercase">
+                    <span className="block text-gold text-sm sm:text-lg md:text-xl font-medium tracking-[0.2em] mb-3 sm:mb-4 uppercase">
                         Est. 2024
                     </span>
                     <h1
                         ref={headlineRef}
-                        className="text-6xl md:text-8xl lg:text-[9rem] leading-[0.9] font-display font-light tracking-tighter mb-8"
+                        className="text-4xl sm:text-6xl md:text-8xl lg:text-[9rem] leading-[0.9] font-display font-light tracking-tighter mb-6 sm:mb-8"
                     >
                         CRUMBELLE
                     </h1>
                     <p
                         ref={subtextRef}
-                        className="text-lg md:text-2xl text-cocoa max-w-md font-body font-light mb-8"
+                        className="text-base sm:text-lg md:text-2xl text-cocoa max-w-xs sm:max-w-md font-body font-light mb-6 sm:mb-8 px-4 sm:px-0"
                     >
                         Handcrafted cinematic cookies & brownies for the modern palate.
                     </p>
 
                     <button
                         onClick={() => openWhatsApp()}
-                        className="px-8 py-4 bg-gold text-cream font-display text-xl uppercase tracking-widest hover:bg-espresso transition-colors duration-300"
+                        className="px-6 py-3 sm:px-8 sm:py-4 bg-gold text-cream font-display text-base sm:text-xl uppercase tracking-widest hover:bg-espresso transition-colors duration-300"
                     >
                         Order Now
                     </button>

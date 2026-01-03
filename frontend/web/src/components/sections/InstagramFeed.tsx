@@ -23,22 +23,22 @@ const ArrowUpRight = ({ className }: { className?: string }) => (
 
 export default function InstagramFeed() {
     return (
-        <section className="py-24 bg-beige border-t border-espresso/5 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 text-center">
-                <span className="text-cocoa uppercase tracking-widest text-sm font-medium mb-4 block">Follow Us</span>
+        <section className="py-16 sm:py-20 md:py-24 bg-beige border-t border-espresso/5 overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+                <span className="text-cocoa uppercase tracking-widest text-sm font-medium mb-3 sm:mb-4 block">Follow Us</span>
                 <a
                     href="https://www.instagram.com/_crumb.elle_/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-3xl md:text-5xl font-display text-espresso hover:text-gold transition-colors"
+                    className="inline-flex items-center gap-2 text-2xl sm:text-3xl md:text-5xl font-display text-espresso hover:text-gold transition-colors"
                 >
-                    @_crumb.elle_ <ArrowUpRight className="w-8 h-8 md:w-12 md:h-12" />
+                    @_crumb.elle_ <ArrowUpRight className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12" />
                 </a>
 
-                <div className="mt-16 flex justify-center gap-4 md:gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 hover:opacity-100">
+                <div className="mt-12 sm:mt-16 flex overflow-x-auto md:justify-center gap-3 sm:gap-4 md:gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 hover:opacity-100 pb-4 md:pb-0 scrollbar-hide">
                     {/* decorative visual strip of existing products pretending to be insta posts */}
                     {[1, 2, 3, 4, 5].map((_, i) => (
-                        <div key={i} className="w-32 h-32 md:w-48 md:h-48 relative rounded-xl overflow-hidden shrink-0 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                        <div key={i} className="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 relative rounded-xl overflow-hidden shrink-0 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                             <Image
                                 src={`/images/products/${i % 2 === 0 ? 'cookie-double-choco' : 'brownie-fudge'}.png`}
                                 alt="Instagram post"
