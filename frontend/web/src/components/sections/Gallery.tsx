@@ -9,10 +9,10 @@ import Image from "next/image";
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-    { src: "/images/gallery/stack.png", alt: "Stack of cookies", span: "row-span-2" },
-    { src: "/images/gallery/hands.png", alt: "Breaking a cookie", span: "col-span-1" },
-    { src: "/images/gallery/plate.png", alt: "Plated brownie", span: "row-span-2 col-span-2" },
-    { src: "/images/gallery/milk.png", alt: "Brownie with milk", span: "col-span-1" },
+    { src: "/images/gallery/stack.png", alt: "Stack of cookies", span: "md:row-span-2" },
+    { src: "/images/gallery/hands.png", alt: "Breaking a cookie", span: "md:col-span-1" },
+    { src: "/images/gallery/plate.png", alt: "Plated brownie", span: "md:row-span-2 md:col-span-2" },
+    { src: "/images/gallery/milk.png", alt: "Brownie with milk", span: "md:col-span-1" },
 ];
 
 export default function Gallery() {
@@ -51,7 +51,7 @@ export default function Gallery() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 sm:gap-4 h-auto md:h-[800px]">
                     {images.map((img, i) => (
-                        <div key={i} className={`relative overflow-hidden rounded-2xl h-64 sm:h-auto ${img.span} gallery-img group`}>
+                        <div key={i} className={`relative overflow-hidden rounded-2xl h-80 sm:h-96 md:h-auto ${img.span} gallery-img group`}>
                             <Image
                                 src={img.src}
                                 alt={img.alt}
