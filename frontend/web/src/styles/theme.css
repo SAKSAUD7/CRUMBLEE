@@ -1,0 +1,30 @@
+:root {
+  /* Brand Colors */
+  --color-cream: #F7F1EA;
+  --color-espresso: #2B1E16;
+  --color-gold: #C58B3A;
+  --color-chocolate: #3A2317;
+  --color-cocoa: #6E4B3A;
+  --color-beige: #E6DED5;
+
+  /* Semantic Map */
+  --bg-primary: var(--color-cream);
+  --text-primary: var(--color-espresso);
+  --accent-gold: var(--color-gold);
+  
+  /* Typography */
+  --font-display: var(--font-geist-sans); /* Placeholder for now */
+  --font-body: var(--font-geist-mono); /* Placeholder for now */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
